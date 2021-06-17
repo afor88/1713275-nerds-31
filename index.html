@@ -4,13 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <style media="screen">
-
-  </style>
 </head>
 
 <body>
-  <header class="header">
+  <header class="Header">
     <nav>
       <a href="#">
         <img src="img/nerds-logo.svg" width="160" height="49" alt="логотип дизайн студии Nerds">
@@ -18,55 +15,66 @@
       <ul>
         <li><a href="index.html">студия</a></li>
         <li><a href="blank.html">клиенты</a></li>
-        <li><a href="blank.html">магазин</a></li>
+        <li><a href="catalog.html">магазин</a></li>
         <li><a href="blank.html">контакты</a></li>
       </ul>
       <a href="blank.htnl">корзина</a>
     </nav>
-    <div class="slide">
-      <div class="slide1">
+    <div class="Slide">
+      <div class="Slide1">
         <h2>Долго, дорого,
           скрупулезно</h2>
         <p>Математически выверенный дизайн
           для вашего сайта или мобильного приложения</p>
-        <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+        <a href="#">узнать больше</a>
       </div>
-      <div class="slide2">
+      <div class="Slide2">
         <h2>Любим математику
           как никто другой</h2>
         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-        <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+        <a href="#">узнать больше</a>
       </div>
-      <div class="slide3">
+      <div class="Slide3">
         <h2>Только ночь,
           только хардкор</h2>
         <p>Математически выверенный дизайн
           для вашего сайта или мобильного приложения.</p>
-        <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+        <a href="#">узнать больше</a>
       </div>
-      <div class="switches"></div>
+      <div class="Switches"></div>
     </div>
   </header>
 
-  <main class="main">
-    <section class="about">
+  <main class="Main">
+    <section class="About">
       <h2 hidden>O компании Нёрдс</h2>
-      <div class="img-statistics">
+      <div class="About-presentation">
+        <p>Мы — маленькая, но гордая
+          дизайн-студия из Краснодара.</p>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <b>Выполняем заказы на разработку:</b>
+        <ul>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="About-statistics">
         <img src="#" width="360" height="208" alt="илюстрация Нёрдс">
         <p>с 2004 года Любим точность во всем:</p>
-        <dl class="table-ststistics">
-          <dt>Уровень
-            самоотдачи</dt>
-          <dd>146%</dd>
-
-          <dt>Соблюдение
-            сроков</dt>
-          <dd>100%</dd>
-
-          <dt>Минимальная
-            предоплата</dt>
-          <dd>50%</dd>
-        </dl>
+        <table>
+          <tr>
+            <td>146%</td>
+            <td>100%</td>
+            <td>50%</td>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
       </div>
     </section>
     <section class="project">
@@ -76,9 +84,9 @@
       <img src="#" width="185" height="52" alt="pink">
       <img src="#" width="173" height="84" alt="mishka">
     </section>
-    <section class="map">
-      <div class="write-to-us">
-        <h2><b>NЁRDS DESIGN STUDIO</b></h2>
+    <section class="Map">
+      <div class="Write-to-us">
+        <h2>Nerds Design Studi</h2>
         <p>наб. Реки Карповки,
           5 лит П, Санкт-Петербург</p>
         <p>+7 800 555-86-28</p>
@@ -86,16 +94,16 @@
       </div>
       <!--здесь будет карта-->
     </section>
-    <section class="feedback">
+    <section class="Feedback">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label for="appointment-date">Ваша имя:</label>
-          <input id="appointment-date" type="text" name="date" placeholder="Имя Фамилия">
+          <label for="name-name">Ваша имя:</label>
+          <input id="name-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p>
-          <label for="appointment-time">Ваш email:</label>
-          <input id="appointment-time" type="text" name="time" placeholder="email@example.com">
+          <label for="email-email">Ваш email:</label>
+          <input id="email-email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p>
           <label>Текст письма:
