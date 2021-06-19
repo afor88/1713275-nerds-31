@@ -8,33 +8,33 @@
 
 <body>
   <header class="Header">
-    <nav>
+    <nav class="Nav">
       <a href="#">
         <img src="img/nerds-logo.svg" width="160" height="49" alt="логотип дизайн студии Nerds">
       </a>
-      <ul>
-        <li><a href="index.html">студия</a></li>
-        <li><a href="blank.html">клиенты</a></li>
-        <li><a href="catalog.html">магазин</a></li>
-        <li><a href="blank.html">контакты</a></li>
+      <ul class="Nav-list">
+        <li class="Nav_item Nav_item-current"><a class="Nav_link" href="index.html">студия</a></li>
+        <li class="Nav_item"><a class="Nav_link" href="blank.html">клиенты</a></li>
+        <li class="Nav_item"><a class="Nav_link" href="catalog.html">магазин</a></li>
+        <li class="Nav_item"><a class="Nav_link" href="blank.html">контакты</a></li>
       </ul>
       <a href="blank.htnl">корзина</a>
     </nav>
     <div class="Slide">
-      <div class="Slide1">
-        <h2>Долго, дорого,
+      <div class="Slide-1">
+        <h2 class="Slider-1_title">Долго, дорого,
           скрупулезно</h2>
         <p>Математически выверенный дизайн
           для вашего сайта или мобильного приложения</p>
         <a href="#">узнать больше</a>
       </div>
-      <div class="Slide2">
+      <div class="Slide-2">
         <h2>Любим математику
           как никто другой</h2>
         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
         <a href="#">узнать больше</a>
       </div>
-      <div class="Slide3">
+      <div class="Slide-3">
         <h2>Только ночь,
           только хардкор</h2>
         <p>Математически выверенный дизайн
@@ -46,14 +46,39 @@
   </header>
 
   <main class="Main">
+    <section class="Services">
+      <h2 hidden>Услуги</h2>
+      <ul class="Services_list">
+        <li class="Services_item">
+          <img class="Services_img" src="" width="" height="" alt="включенный ноутбук">
+          <h3 class="Services_item_title">Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="Services_link" href="#">заказать</a>
+        </li>
+        <li class="Services_item">
+          <img class="Services_img" src="" width="" height="" alt="включенный ноутбук">
+          <h3 class="Services_item_title">Приложения</h3>
+          <p>Покорите топ-10 приложений
+            в AppStore и Google Play</p>
+          <a class="Services_link" href="#">заказать</a>
+        </li>
+        <li class="Services_item">
+          <img class="Services_img" src="" width="" height="" alt="включенный ноутбук">
+          <h3 class="Services_item_title">Презентации</h3>
+          <p>Вы даже не подозреваете,
+            насколько вы изумительны!</p>
+          <a class="Services_link" href="#">заказать</a>
+        </li>
+      </ul>
+    </section>
     <section class="About">
       <h2 hidden>O компании Нёрдс</h2>
       <div class="About-presentation">
-        <p>Мы — маленькая, но гордая
+        <p class="About-presentation_title">Мы — маленькая, но гордая
           дизайн-студия из Краснодара.</p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <b>Выполняем заказы на разработку:</b>
+        <p class="About-presentation_title-sub">Выполняем заказы на разработку:</p>
         <ul>
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для iOS и Android</li>
@@ -61,8 +86,8 @@
         </ul>
       </div>
       <div class="About-statistics">
-        <img src="#" width="360" height="208" alt="илюстрация Нёрдс">
-        <p>с 2004 года Любим точность во всем:</p>
+        <img class="About-statistics_img" src="#" width="360" height="208" alt="илюстрация Нёрдс">
+        <p class="About-statistics_title-sub">с 2004 года Любим точность во всем:</p>
         <table>
           <tr>
             <td>146%</td>
@@ -85,7 +110,7 @@
       <img src="#" width="173" height="84" alt="mishka">
     </section>
     <section class="Map">
-      <div class="Write-to-us">
+      <div class="Map_Feedback">
         <h2>Nerds Design Studi</h2>
         <p>наб. Реки Карповки,
           5 лит П, Санкт-Петербург</p>
@@ -95,7 +120,7 @@
       <!--здесь будет карта-->
     </section>
     <section class="Feedback">
-      <h2>Напишите нам</h2>
+      <h2 class="Feedback_title">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="name-name">Ваша имя:</label>
@@ -115,17 +140,17 @@
       </form>
     </section>
   </main>
-  <footer>
-    <h2>Давайте дружить, это выгодно!</h2>
+  <footer class="Footer">
+    <h2 class="Footer-title">Давайте дружить, это выгодно!</h2>
     <p>Скидка 10% для друзей из социальных сетей.</p>
-    <ul>
-      <li>
+    <ul class="Footer-list">
+      <li class="footer-item">
         <a href="#">Вконтакте</a>
       </li>
-      <li>
+      <li class="footer-item">
         <a href="#">Фейсбук</a>
       </li>
-      <li>
+      <li class="footer-item">
         <a href="#">Инстаграм</a>
       </li>
     </ul>
